@@ -9,5 +9,19 @@ function imprimePares(num) {
     }
   }
 }
-
+console.log("1️⃣- Imprimindo Números Pares:")
 imprimePares(10);
+
+// ### 2️⃣ Soma dos Números de um Array
+// Descrição: Crie uma função que receba um array de números e retorne a soma de todos os elementos.
+
+function somaArray(array) {
+  const valorInicial = 0;
+  let soma = array.reduce((valorAcumulado, valorAtual) => {
+    return valorAcumulado + valorAtual;
+  }, valorInicial)
+  console.log(soma)
+}
+
+console.log("2️⃣- Soma dos Números de um Array:")
+somaArray([1, 2, 3, 4, 5])
