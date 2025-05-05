@@ -75,3 +75,24 @@ function fizzBuzz() {
 
 console.log("4️⃣- FizzBuzz:")
 fizzBuzz()
+
+// ### 5️⃣ Contador de Vogais
+// Descrição: Crie uma função que receba uma string e retorne a quantidade de vogais nela.
+
+function contaVogais(paragrafo) {
+  const regex = /[aeiouáàâãéèêíìîóòôõúùû]/gi
+  const testeRegex = regex.test(paragrafo)
+  // console.log("contaVogais ~ teste:", testeRegex)
+
+  if (testeRegex) {
+    const totalVogais = paragrafo.match(regex)
+    // console.log(totalVogais)
+    console.log(totalVogais.length)
+  } else {
+    console.log("Não foram encontradas vogais no paráfrago informado.")
+  }
+}
+
+console.log("5️⃣- Contador de Vogais:")
+contaVogais("Node.js é incrível") // Obs: A saída da frase é 6.
+// contaVogais("Nfrt")
