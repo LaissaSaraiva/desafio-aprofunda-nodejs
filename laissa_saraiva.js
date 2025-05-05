@@ -126,6 +126,28 @@ function inverteString(string) {
 console.log("7️⃣- Inverter String:")
 inverteString("hello")
 
+// ### 8️⃣ Encontre o Maior Número
+// Descrição: Crie uma função que receba um array de números e retorne o maior número presente nele.
+// Entrada: `maiorNumero([3, 10, 6, 2])`
+// Saída: `10`
+
+function maiorNumero(array) {
+  // console.log(array.length)
+  let maiorNum = 0
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > maiorNum) {
+      maiorNum = array[i]
+    }
+    // console.log(" array[i]:", array[i])
+  }
+  console.log(maiorNum)
+  return maiorNum
+}
+
+console.log("8 - Encontre o Maior Número:")
+maiorNumero([3, 10, 6, 2])
+
 // ### 🔟 Média de Notas
 // Descrição: Crie uma função que receba um array de notas e retorne se a média é "Aprovado" (≥7) ou "Reprovado" (<7).
 
