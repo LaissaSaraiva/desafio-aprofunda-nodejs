@@ -96,3 +96,16 @@ function contaVogais(paragrafo) {
 console.log("5️⃣- Contador de Vogais:")
 contaVogais("Node.js é incrível") // Obs: A saída da frase é 6.
 // contaVogais("Nfrt")
+
+
+// ### 6️⃣ Tabuada de um Número
+// Descrição: Crie uma função que receba um número e imprima a sua tabuada de 1 a 10.
+
+function tabuada(num) {
+  for (let i = 1; i <= 10; i++) {
+    console.log(num, "x", i, "=", num * i)
+  }
+}
+
+console.log("6️⃣- Tabuada de um Número:")
+tabuada(5)
