@@ -9,8 +9,10 @@ function imprimePares(num) {
     }
   }
 }
-console.log("1️⃣- Imprimindo Números Pares:")
+console.log("1 - Imprimindo Números Pares:")
 imprimePares(10);
+
+console.log("==========================================")
 
 // ### 2️⃣ Soma dos Números de um Array
 // Descrição: Crie uma função que receba um array de números e retorne a soma de todos os elementos.
@@ -24,8 +26,10 @@ function somaArray(array) {
   return soma
 }
 
-console.log("2️⃣- Soma dos Números de um Array:")
+console.log("2 - Soma dos Números de um Array:")
 somaArray([1, 2, 3, 4, 5])
+
+console.log("==========================================")
 
 // ### 3️⃣ Identificar Número Primo
 // Descrição: Crie uma função que receba um número inteiro e retorne `true` se for primo e `false` caso contrário.
@@ -38,13 +42,11 @@ function ePrimo(num) {
     console.log("Informe um número maior do que 1")
   } else {
     for (let i = 1; i <= num; i++) {
-      // console.log(num, "/", i, "sobra: ", num % i)
+
       if ((num % i === 0)) {
-        // console.log(num, "é divisivel por:", i)
         eDivisivelPor.push(i)
       }
     }
-    // console.log(num, "ePrimo ~ eDivisivelPor:", eDivisivelPor)
     if (eDivisivelPor.length > 2) {
       ePrimo = false
     } else {
@@ -54,8 +56,10 @@ function ePrimo(num) {
   }
 }
 
-console.log("3️⃣- Identificar Número Primo:")
+console.log("3 - Identificar Número Primo:")
 ePrimo(7), ePrimo(10)
+
+console.log("==========================================")
 
 // ### 4️⃣ FizzBuzz
 // Descrição: Crie uma função que imprima números de 1 a 50, substituindo múltiplos de 3 por "Fizz", múltiplos de 5 por "Buzz" e múltiplos de ambos por "FizzBuzz".
@@ -74,8 +78,10 @@ function fizzBuzz() {
   }
 }
 
-console.log("4️⃣- FizzBuzz:")
+console.log("4 - FizzBuzz:")
 fizzBuzz()
+
+console.log("==========================================")
 
 // ### 5️⃣ Contador de Vogais
 // Descrição: Crie uma função que receba uma string e retorne a quantidade de vogais nela.
@@ -83,21 +89,20 @@ fizzBuzz()
 function contaVogais(paragrafo) {
   const regex = /[aeiouáàâãéèêíìîóòôõúùû]/gi
   const testeRegex = regex.test(paragrafo)
-  // console.log("contaVogais ~ teste:", testeRegex)
 
   if (testeRegex) {
     const totalVogais = paragrafo.match(regex)
-    // console.log(totalVogais)
     console.log(totalVogais.length)
   } else {
     console.log("Não foram encontradas vogais no paráfrago informado.")
   }
 }
 
-console.log("5️⃣- Contador de Vogais:")
+console.log("5 - Contador de Vogais:")
 contaVogais("Node.js é incrível") // Obs: A saída da frase é 6.
 // contaVogais("Nfrt")
 
+console.log("==========================================")
 
 // ### 6️⃣ Tabuada de um Número
 // Descrição: Crie uma função que receba um número e imprima a sua tabuada de 1 a 10.
@@ -108,24 +113,27 @@ function tabuada(num) {
   }
 }
 
-console.log("6️⃣- Tabuada de um Número:")
+console.log("6 - Tabuada de um Número:")
 tabuada(5)
+
+console.log("==========================================")
 
 // ### 7️⃣ Inverter String
 // Descrição: Crie uma função que receba uma string e retorne a mesma string invertida.
 
 function inverteString(string) {
   const palavra = string.split('');
-  // console.log("palavra:", palavra)
   const inverterPalavra = palavra.reverse()
-  // console.log("inverterPalavra:", inverterPalavra)
   const palavraInvertida = inverterPalavra.join('')
+
   console.log(palavraInvertida)
   return palavraInvertida
 }
 
-console.log("7️⃣- Inverter String:")
+console.log("7 - Inverter String:")
 inverteString("hello")
+
+console.log("==========================================")
 
 // ### 8️⃣ Encontre o Maior Número
 // Descrição: Crie uma função que receba um array de números e retorne o maior número presente nele.
@@ -133,14 +141,12 @@ inverteString("hello")
 // Saída: `10`
 
 function maiorNumero(array) {
-  // console.log(array.length)
   let maiorNum = 0
 
   for (let i = 0; i < array.length; i++) {
     if (array[i] > maiorNum) {
       maiorNum = array[i]
     }
-    // console.log(" array[i]:", array[i])
   }
   console.log(maiorNum)
   return maiorNum
@@ -149,31 +155,31 @@ function maiorNumero(array) {
 console.log("8 - Encontre o Maior Número:")
 maiorNumero([3, 10, 6, 2])
 
+console.log("==========================================")
+
 // ### 9️⃣ Palíndromo
 // Descrição: Crie uma função que receba uma string e retorne `true` se ela for um palíndromo e `false` caso contrário.
 
 function ePalindromo(frase) {
   let ePalindromo;
   const fraseMinuscula = frase.toLowerCase()
-  // console.log("fraseMinuscula:", fraseMinuscula)
   const fraseInvertida = inverteString(fraseMinuscula)
-  // console.log("fraseInvertida:", fraseInvertida)
 
   if (fraseMinuscula === fraseInvertida) {
-    // console.log("É Palíndromo")
     ePalindromo = true
   } else {
-    // console.log("Não é Palíndromo")
     ePalindromo = false
   }
 
-  console.log("ePalindromo:", ePalindromo)
+  console.log(ePalindromo)
   return ePalindromo
 }
 
 console.log("9 - Palíndromo:")
 ePalindromo("Ame a ema")
 ePalindromo("Olá mundo")
+
+console.log("==========================================")
 
 // ### 🔟 Média de Notas
 // Descrição: Crie uma função que receba um array de notas e retorne se a média é "Aprovado" (≥7) ou "Reprovado" (<7).
