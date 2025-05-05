@@ -109,3 +109,18 @@ function tabuada(num) {
 
 console.log("6️⃣- Tabuada de um Número:")
 tabuada(5)
+
+// ### 7️⃣ Inverter String
+// Descrição: Crie uma função que receba uma string e retorne a mesma string invertida.
+
+function inverteString(string) {
+  const palavra = string.split('');
+  // console.log("palavra:", palavra)
+  const inverterPalavra = palavra.reverse()
+  // console.log("inverterPalavra:", inverterPalavra)
+  const palavraInvertida = inverterPalavra.join('')
+  return console.log(palavraInvertida)
+}
+
+console.log("7️⃣- Inverter String:")
+inverteString("hello")
