@@ -21,6 +21,7 @@ function somaArray(array) {
     return valorAcumulado + valorAtual;
   }, valorInicial)
   console.log(soma)
+  return soma
 }
 
 console.log("2️⃣- Soma dos Números de um Array:")
@@ -124,3 +125,26 @@ function inverteString(string) {
 
 console.log("7️⃣- Inverter String:")
 inverteString("hello")
+
+// ### 🔟 Média de Notas
+// Descrição: Crie uma função que receba um array de notas e retorne se a média é "Aprovado" (≥7) ou "Reprovado" (<7).
+
+function calculaMedia(notas) {
+  const quantidadeNotas = notas.length
+  const totalNotas = somaArray(notas)
+  const media = (totalNotas / quantidadeNotas).toFixed(1)
+
+  if (quantidadeNotas < 1 || quantidadeNotas === undefined) {
+    console.log("Insira as notas!")
+  } else {
+    if (media >= 7) {
+      console.log("Aprovado - Média:", media)
+    } else {
+      console.log("Reprovado- Média:", media)
+    }
+  }
+}
+
+console.log("10 - Média de Notas:")
+calculaMedia([8, 7, 6])
+calculaMedia([5, 6, 4])
