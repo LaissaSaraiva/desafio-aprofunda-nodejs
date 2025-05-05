@@ -55,3 +55,23 @@ function ePrimo(num) {
 
 console.log("3️⃣- Identificar Número Primo:")
 ePrimo(7), ePrimo(10)
+
+// ### 4️⃣ FizzBuzz
+// Descrição: Crie uma função que imprima números de 1 a 50, substituindo múltiplos de 3 por "Fizz", múltiplos de 5 por "Buzz" e múltiplos de ambos por "FizzBuzz".
+
+function fizzBuzz() {
+  for (let i = 1; i <= 50; i++) {
+    if (i % 5 === 0 && i % 3 === 0) {
+      console.log('FizzBuzz')
+    } else if (i % 5 === 0) {
+      console.log('Buzz')
+    } else if (i % 3 === 0) {
+      console.log('Fizz')
+    } else {
+      console.log(i)
+    }
+  }
+}
+
+console.log("4️⃣- FizzBuzz:")
+fizzBuzz()
