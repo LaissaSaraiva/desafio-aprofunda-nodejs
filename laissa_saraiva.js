@@ -120,7 +120,8 @@ function inverteString(string) {
   const inverterPalavra = palavra.reverse()
   // console.log("inverterPalavra:", inverterPalavra)
   const palavraInvertida = inverterPalavra.join('')
-  return console.log(palavraInvertida)
+  console.log(palavraInvertida)
+  return palavraInvertida
 }
 
 console.log("7️⃣- Inverter String:")
@@ -147,6 +148,32 @@ function maiorNumero(array) {
 
 console.log("8 - Encontre o Maior Número:")
 maiorNumero([3, 10, 6, 2])
+
+// ### 9️⃣ Palíndromo
+// Descrição: Crie uma função que receba uma string e retorne `true` se ela for um palíndromo e `false` caso contrário.
+
+function ePalindromo(frase) {
+  let ePalindromo;
+  const fraseMinuscula = frase.toLowerCase()
+  // console.log("fraseMinuscula:", fraseMinuscula)
+  const fraseInvertida = inverteString(fraseMinuscula)
+  // console.log("fraseInvertida:", fraseInvertida)
+
+  if (fraseMinuscula === fraseInvertida) {
+    // console.log("É Palíndromo")
+    ePalindromo = true
+  } else {
+    // console.log("Não é Palíndromo")
+    ePalindromo = false
+  }
+
+  console.log("ePalindromo:", ePalindromo)
+  return ePalindromo
+}
+
+console.log("9 - Palíndromo:")
+ePalindromo("Ame a ema")
+ePalindromo("Olá mundo")
 
 // ### 🔟 Média de Notas
 // Descrição: Crie uma função que receba um array de notas e retorne se a média é "Aprovado" (≥7) ou "Reprovado" (<7).
